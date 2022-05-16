@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
-Body {
+body {
   font-family: 'Lato', sans-serif;
 }
 
@@ -11,4 +11,42 @@ h3,
 h4,
 h5 {
   font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ec4c8A;
+  color: white;
+}
+
+.logoDiv {
+  margin-right: 20px;
+}
+
+#anchora {
+  text-decoration: none;
+  margin-left: -20px;
+  color: white;
+}
+
+#anchorb {
+  text-decoration: none;
+  margin-left: 120px;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+#navList {
+  display: flex;
+  flex-direction: row;
+}
+
+.microphone {
+  margin-right: 20px;
 }
