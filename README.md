@@ -1,19 +1,19 @@
-# air-pollution-metrics-webapp
+# covid-metrics-webapp
 
-This is a mobile web application that uses Air Pollution API data to provide current, forecast and historical air pollution data for any coordinates on the globe. 
+This is a mobile web application that collects information from different data sources to provide comprehensive data for the novel coronavirus, SARS-CoV-2.
 
 The webapp has two (2) pages:
 
 - The HomePage with a list of items that are filtered by applicable parameters selected; example can be filtered by the country. 
 
-- DetailPage for the item details; example, the detail for cities with number of pollutants.
+- DetailPage for the item details; example, the detail for cities with number of covid cases.
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-1. git clone git@github.com:oshanedesign/air-pollution-metrics-webapp.git
-2. Cd into air-pollution-metrics-webapp
+1. git clone git@github.com:oshanedesign/covid-metrics-webapp.git
+2. Cd into covid-metrics-webapp
 3. Run npm install to get all the required web packages 
 
 ### Run web package
