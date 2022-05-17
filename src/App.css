@@ -3,6 +3,8 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0;
+  height: 100%;
 }
 
 h1,
@@ -49,4 +51,27 @@ li {
 
 .microphone {
   margin-right: 20px;
+}
+
+/* ...................Grid systems  .................*/
+
+.outer {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column; /* added */
+}
+
+.row {
+  border: 1px solid blue;
+  display: flex;
+  flex: 1; /* added */
+}
+
+.item {
+  background-color: #CE4177;
+  border: 1px solid red;
+  flex: 1; /* added */
+  width: 300px;
+  height: 100px;
+  padding: 50px;
 }
