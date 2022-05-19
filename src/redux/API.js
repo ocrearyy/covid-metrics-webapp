@@ -1,26 +1,15 @@
-const covidURL = 'https://api.spacexdata.com/v3/rockets';
-
-const getData = async () => {
-  const response = await fetch(rocketURL);
-  const responseData = await response.json();
-
-  return responseData.map((element) => ({
-    id: element.id,
-    flickr_images: element.flickr_images,
-    rocket_name: element.rocket_name,
-    description: element.description,
-  }));
-};
-
-const fetchMissions = async () => {
-  const response = await fetch(missionURL);
-  const missions = await response.json();
-
-  return missions.map((element) => ({
-    mission_id: element.mission_id,
-    mission_name: element.mission_name,
-    description: element.description,
-  }));
-};
-
-export { fetchMissions, getData };
+const fetchData = async () => {
+    const response = await fetch('https://api.covid19tracking.narrativa.com/api/2020-03-10');
+    const data = await response.json();
+    // console.log(data.dates['2020-03-10'].countries);
+    // const myArray = [];
+    return data;
+  };
+  const thunkFunction = () => async (dispatch) => {
+    const kino = await fetchData();
+    const dino = await kino.dates['2020-03-10'];
+    dispatch({ type: 'SEND_TO_STORE', payload: dino });
+  };
+  
+  export default thunkFunction;
+  

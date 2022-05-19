@@ -20,8 +20,7 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #ec4c8A;
-  color: white;
+  color: black;
 }
 
 .logoDiv {
@@ -31,13 +30,13 @@ h5 {
 #anchora {
   text-decoration: none;
   margin-left: -20px;
-  color: white;
+  color: black;
 }
 
 #anchorb {
   text-decoration: none;
-  margin-left: 120px;
-  color: white;
+  margin-left: 50px;
+  color: black;
 }
 
 li {
@@ -62,16 +61,81 @@ li {
 }
 
 .row {
-  border: 1px solid blue;
+  border: 1px solid black;
   display: flex;
   flex: 1; /* added */
 }
 
 .item {
-  background-color: #CE4177;
-  border: 1px solid red;
-  flex: 1; /* added */
-  width: 300px;
-  height: 100px;
-  padding: 50px;
+      background-color: powderblue;
+      border: 1px solid black;
+      flex: 1 1;
+      width: 300px;
+      height: 100px;
+      /* padding: 50px; */
+      padding-top: 20px;
+      color: black;
+      text-align: right;
+      padding-bottom: 20px;
+}
+
+.ja {
+  background-image: url(./images/tn_jm-flag.gif);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.be {
+  background-image: url(./images/tn_bh-flag.gif);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+
+.pu {
+  background-image: url(./images/download.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.ar {
+  background-image: url(./images/download\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.ba {
+  background-image: url(./images/Flag_of_the_Bahamas.svg.png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+
+.bar {
+  background-image: url(./images/download\ \(2\).png);
+  background-repeat: no-repeat;
+  background-size: 50px;
+}
+.country {
+  text-align: end;
+}
+
+.border {
+  /* background-color: #E04683; */
+  color: black;
+}
+
+.contain {
+  border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #efd6da;
+    border-radius: 20px;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 300px;
+    padding-bottom: 40px;
 }
