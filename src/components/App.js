@@ -17,7 +17,7 @@ function App() {
     dispatch(setInitialData());
   }, []);
   return (
-      <div className="App">
+    <Router className="App">
       <div className="contain">
         <NavBar />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/country/:id" element={<Display />} />
         </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 
