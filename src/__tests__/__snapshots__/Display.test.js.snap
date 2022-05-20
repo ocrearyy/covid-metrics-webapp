@@ -2,11 +2,17 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="home"
+  className="display-body"
 >
-  <h1>
-    Please see further details
-  </h1>
-  <section />
+  <div>
+    <h1
+      className="main-text"
+    >
+      Further Details
+    </h1>
+  </div>
+  <section
+    className="section"
+  />
 </div>
 `;
