@@ -1,10 +1,14 @@
-import { Route, Routes } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import NavBar from './NavBar';
 import Display from './Display';
 import Home from './Home';
-import { setInitialData } from '../redux/reducer';
+import { setInitialData } from '../redux/continent';
 import '../App.css';
 
 function App() {
@@ -13,7 +17,7 @@ function App() {
     dispatch(setInitialData());
   }, []);
   return (
-    <div className="App">
+    <Router className="App">
       <div className="contain">
         <NavBar />
         <Routes>
@@ -21,7 +25,7 @@ function App() {
           <Route path="/country/:id" element={<Display />} />
         </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
 

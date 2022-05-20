@@ -1,10 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import myReducer from './reducer';
+import thunk from 'redux-thunk';
+import { logger } from 'redux-logger';
+import continentReducer from './continent';
 
-const store = configureStore({
-  reducer: {
-    country: myReducer,
-  },
+export default configureStore({
+  reducer: continentReducer,
+  middleware: [thunk, logger],
 });
-
-export default store;
