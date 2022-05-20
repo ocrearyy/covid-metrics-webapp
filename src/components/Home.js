@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import { RiFirstAidKitLine } from 'react-icons/ri';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import thunkFunction from '../redux/API';
@@ -13,16 +13,9 @@ const Home = () => {
         <Link to={`/country/${country.id}`} className="outer" key={country.id}>
           <div className="row">
             <div className="item">
-              <BsArrowRightCircle />
-              <h2 className="country">{country.id}</h2>
-              <h2 className="date">
-                Date:
-                {country.date}
-              </h2>
-              <h2 className="confirm">
-                Confirmed Cases:
-                {country.today_confirmed}
-              </h2>
+              <RiFirstAidKitLine className="first-aid" />
+              <h2 className="country">{country.id.toUpperCase()}</h2>
+              <button type="button" className="btn">View Details</button>
             </div>
           </div>
         </Link>

@@ -20,30 +20,32 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: black;
-  background-color: lightpink;
+  color: white;
+  background-color: red;
 }
 
 .logoDiv {
   margin-right: 20px;
+  font-size: 30px;
 }
 
 .home {
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #anchora {
   text-decoration: none;
   margin-left: -20px;
-  color: black;
+  color: white;
+  font-size: 30px;
 }
 
 #anchorb {
   text-decoration: none;
-  margin-left: 500px;
-  color: black;
+  margin-left: 600px;
+  font-size: 30px;
 }
 
 li {
@@ -59,10 +61,11 @@ li {
   margin-right: 20px;
 }
 
-/* ...................Grid systems  .................*/
+/* ...................Grid systems  ................. */
 
 .outer {
   margin: 10px;
+  text-decoration: none;
 }
 
 .row {
@@ -72,58 +75,35 @@ li {
 }
 
 .item {
-  background-color: powderblue;
-  border: 1px solid black;
-  flex: 1 1;
+  background-color: #f44e3f;
+  border-radius: 10px;
   width: 300px;
-  /* height: 100px; */
-  /* padding: 50px; */
   padding-top: 20px;
-  color: black;
-  text-align: right;
+  color: white;
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 10px;
   padding-bottom: 20px;
 }
 
-.ja {
-  background-image: url(./images/tn_jm-flag.gif);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.be {
-  background-image: url(./images/tn_bh-flag.gif);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-
-.pu {
-  background-image: url(./images/download.png);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.ar {
-  background-image: url(./images/download\ \(1\).png);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.ba {
-  background-image: url(./images/Flag_of_the_Bahamas.svg.png);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
-
-.bar {
-  background-image: url(./images/download\ \(2\).png);
-  background-repeat: no-repeat;
-  background-size: 50px;
-}
 .country {
-  text-align: end;
+  font-size: 18px;
+}
+
+.display-body {
+  background-color: #f44e3f;
+  border-radius: 10px;
+  width: 300px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .border {
@@ -146,3 +126,26 @@ li {
     width: 300px;
     padding-bottom: 40px;
 } */
+
+.main-text {
+  text-align: center;
+}
+
+.main-p {
+  text-align: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.first-aid {
+  font-size: 30px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}

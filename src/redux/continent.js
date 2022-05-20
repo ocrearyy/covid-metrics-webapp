@@ -7,13 +7,11 @@ export const setInitialData = () => async (dispatch) => {
   dispatch(({ type: INITIALIZE_DATA, payload: data }));
 };
 
-export default function continentReducer (state = [], action) {
+export default function continentReducer(state = [], action) {
   switch (action.type) {
     case INITIALIZE_DATA:
       return [...Object.values(action.payload.countries)];
     default:
       return state;
   }
-};
-
-
+}

@@ -7,20 +7,37 @@ const Display = () => {
   useEffect(() => {
     thunkFunction();
   }, []);
-  const blaa = window.location.href.slice(30);
+  const details = window.location.href.slice(30);
   return (
-    <div className="home">
-      <h1>Please see further details</h1>
-      <section>
-        {country.map((i) => (i.id === blaa
+    <div className="display-body">
+      <div>
+        <h1 className="main-text">Further Details</h1>
+      </div>
+      <section className="section">
+        {country.map((i) => (i.id === details
           ? (
-            <div key={i.id}>
-              <h1 key={i.id}>{i.id}</h1>
-              <p>{i.today_confirmed}</p>
-              <p>{i.today_confirmed}</p>
-              <p>{i.today_open_cases}</p>
-              <p>{i.yesterday_confirmed}</p>
-
+            <div className="main-p" key={i.id}>
+              <h1 key={i.id}>{i.id.toUpperCase()}</h1>
+              <p>
+                Today&lsquo;s Confirmed Cases:
+                &nbsp;
+                {i.today_confirmed}
+              </p>
+              <p>
+                Today&lsquo;s Confirmed deaths:
+                &nbsp;
+                {i.today_deaths}
+              </p>
+              <p>
+                Today&lsquo;s Open Cases:
+                &nbsp;
+                {i.today_open_cases}
+              </p>
+              <p>
+                Today&lsquo;s Recovered Cases:
+                &nbsp;
+                {i.today_recovered}
+              </p>
             </div>
           )
           : console.log('it is not right match')))}
