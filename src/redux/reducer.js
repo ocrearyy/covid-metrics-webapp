@@ -1,8 +1,9 @@
-import { createStore, applyMiddleware } from 'redux'
-import thunk from 'redux-thunk'
-import logger from 'redux-logger'
-import fetchData from './API'
-const INITIALIZE_DATA = "Initialize_App_Data";
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import logger from 'redux-logger';
+import fetchData from './API';
+
+const INITIALIZE_DATA = 'Initialize_App_Data';
 
 export const setInitialData = () => async (dispatch) => {
   const data = await fetchData();
@@ -16,8 +17,7 @@ const continentReducer = (state = [], action) => {
     default:
       return state;
   }
-}
-
+};
 
 const store = createStore(continentReducer, applyMiddleware(thunk, logger));
 
