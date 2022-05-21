@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: red;
+}
+
+.logoDiv {
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#anchora {
+  text-decoration: none;
+  margin-left: -20px;
+  color: white;
+  font-size: 30px;
+}
+
+#anchorb {
+  text-decoration: none;
+  margin-left: 600px;
+  font-size: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+#navList {
+  display: flex;
+  flex-direction: row;
+}
+
+.microphone {
+  margin-right: 20px;
+}
+
+/* ...................Grid systems  ................. */
+
+.outer {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.row {
+  /* border: 1px solid black; */
+  display: flex;
+  flex: 1; /* added */
+}
+
+.item {
+  background-color: #f44e3f;
+  border-radius: 10px;
+  width: 300px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+.country {
+  font-size: 18px;
+}
+
+.display-body {
+  background-color: #f44e3f;
+  border-radius: 10px;
+  width: 300px;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.border {
+  /* background-color: #E04683; */
+  color: black;
+}
+
+/* .contain {
+  border: 2px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #efd6da;
+    border-radius: 20px;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 300px;
+    padding-bottom: 40px;
+} */
+
+.main-text {
+  text-align: center;
+}
+
+.main-p {
+  text-align: center;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.first-aid {
+  font-size: 30px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.header-info {
+  font-size: 11px;
+}
+
+form {
+  margin: 20px;
+  display: flex;
+}
+
+.country-item {
+  width: 60%;
+}
+
+#search {
+  font-size: 13px;
+  padding: 15px 10px 10px 42px;
+}
+
+.search-icon {
+  transform: translate(35px, 16px);
+  font-size: 20px;
+  z-index: 2;
+  opacity: 0.7;
+}
