@@ -40,7 +40,7 @@ const Display = () => {
               </p>
             </div>
           )
-           : console.log('it is not right match')))}
+          : console.log('it is not right match')))}
 
       </section>
     </div>
